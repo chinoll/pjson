@@ -11,7 +11,7 @@ def _dumps(c):
         except:
             pass
     for i in attr_dict:
-        if type(attr_dict[i]) in [int,str,dict,list,set]:
+        if type(attr_dict[i]) in [int,str,dict,list]:
             continue
         if isinstance(attr_dict[i],object):
             attr_dict[i] = _dumps(attr_dict[i])
